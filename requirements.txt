@@ -1,6 +1,5 @@
 
 google-api-python-client
 oauth2client
-json
 pandas
 streamlit==22.2.2
