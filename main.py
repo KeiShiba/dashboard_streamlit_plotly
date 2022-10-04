@@ -123,7 +123,7 @@ def video_search(youtube, q='自動化', max_results=50):
 st.title('YouTube分析アプリ')
 
 st.sidebar.write("""
-## クエリとしきい値の設定""")
+## クエリ""")
 st.sidebar.write("""
 ### クエリの入力""")
 query = st.sidebar.text_input('検索クエリを入力してください', 'Anna Takeuchi')
