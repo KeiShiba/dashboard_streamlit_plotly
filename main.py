@@ -153,7 +153,7 @@ def downloader(df):
 
 
 
-st.title('YouTube分析アプリ')
+st.title('YouTubeアプリ')
 
 st.sidebar.write("""
 ## クエリ""")
