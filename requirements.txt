@@ -1,0 +1,4 @@
+piclient.discovery
+json
+pandas
+streamlit
