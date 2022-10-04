@@ -1,4 +1,4 @@
 piclient.discovery
 json
 pandas
-streamlit
+streamlit=22.2.2
