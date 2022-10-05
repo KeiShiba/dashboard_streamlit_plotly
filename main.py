@@ -119,7 +119,7 @@ def video_search(youtube, q='自動化', max_results=5):
     df = pd.merge(left=df_video, right=df_subscribers, on='snippet.channelId')
     df["id"] = df["id.videoId"]
     df = pd.merge(left=df, right=df_all, on='id')
-    df = df[["snippet.publishedAt_x","snippet.channelTitle_y","subscriber_count","snippet.title_x","snippet.localized.description","statistics.viewCount","statistics.likeCount","statistics.commentCount","snippet.categoryId","id","snippet.defaultAudioLanguage","snippet.tags"]]
+    df = df[["snippet.publishedAt_x","snippet.channelTitle_y","subscriber_count","snippet.title_x","snippet.localized.description","statistics.viewCount","statistics.likeCount","statistics.commentCount","snippet.categoryId","id","snippet.defaultAudioLanguage","snippet.defaultLanguage","snippet.tags"]]
     
 
 
