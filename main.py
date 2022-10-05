@@ -161,6 +161,9 @@ st.sidebar.write("""
 ### クエリの入力""")
 query = st.sidebar.text_input('検索クエリを入力してください', 'Anna Takeuchi')
 
+st.sidebar.write("""
+#検索結果数（API制限対策）""")
+limits = st.sidebar.text_input('検索結果数を入力してください', '5')
 
 
 
@@ -170,7 +173,7 @@ st.markdown(f"""
 - 検索クエリ: {query}
 """)
 
-results = video_search(youtube, q=query, max_results=50)
+results = video_search(youtube, q=query, max_results=limits)
 
 
 st.write("### 分析結果", results)
