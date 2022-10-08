@@ -182,7 +182,10 @@ if len(API_KEY)<5:
 else:
   results = video_search(youtube, q=query, max_results=limits)
   st.write("### 分析結果", results)
+  st.write("### CSVダウンロード")
+  downloader(results)
   st.write("### 動画再生")
+  
 
 
 
@@ -202,11 +205,7 @@ if st.button('ビデオ表示'):
             """
             )
 
-st.write("### CSVダウンロード")
 
-
-
-downloader(results)
 
 
 
