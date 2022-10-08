@@ -178,6 +178,8 @@ st.markdown(f"""
 
 
 if len(API_KEY)<5:
+  st.write("# YouTubeAPIKEYを入力してください")
+
   pass
 else:
   results = video_search(youtube, q=query, max_results=limits)
