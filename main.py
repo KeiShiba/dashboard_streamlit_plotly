@@ -178,7 +178,7 @@ st.markdown(f"""
 
 
 if len(API_KEY)<5:
-  st.write("# YouTubeAPIKEYを入力してください")
+  st.write("### YouTubeAPIKEYを入力してください")
 
   pass
 else:
