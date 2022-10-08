@@ -178,10 +178,10 @@ st.markdown(f"""
 
 results = video_search(youtube, q=query, max_results=limits)
 
-if len(API_KEY)==0:
+if len(API_KEY)<5:
   pass
 else:
-#   st.write("### 分析結果", results)
+  st.write("### 分析結果", results)
   st.write("### 動画再生")
 
 
