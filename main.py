@@ -178,8 +178,10 @@ st.markdown(f"""
 
 results = video_search(youtube, q=query, max_results=limits)
 
-
-st.write("### 分析結果", results)
+if API_KEY=='':
+  pass
+else:
+  st.write("### 分析結果", results)
 st.write("### 動画再生")
 
 
