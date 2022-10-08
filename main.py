@@ -14,7 +14,7 @@ API_KEY= st.sidebar.text_input('APIKEY入力', '')
 
 DEVELOPER_KEY = API_KEY
 
-IF DEVELOPER_KEY == '':
+IF len(DEVELOPER_KEY) < 0:
   pass
 else:
 
