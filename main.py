@@ -161,7 +161,7 @@ st.title('YouTubeアプリ')
 
 st.sidebar.write("""
 検索結果数（API制限対策）""")
-limits = st.sidebar.text_input('検索結果数を入力してください', '5')
+limits = st.sidebar.text_input('検索結果数を入力してください', '25')
 
 
 
